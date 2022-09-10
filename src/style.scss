@@ -132,7 +132,7 @@ main {
 }
 
 footer {
-    padding: 2em 0;
+    margin: 2em 0;
 
     a {
         color: inherit;
@@ -143,28 +143,31 @@ footer {
         font-size: 1.25rem;
         font-weight: 700;
         text-align: center;
+        margin: 0;
     }
 
     #signature {
-        margin-bottom: 0.5em;
+        p {
+            margin-bottom: 0.5em;
 
-        a {
-            transition: color 100ms ease-in-out;
-
-            &:hover {
-                color: $accent;
+            a {
+                transition: color 100ms ease-in-out;
+    
+                &:hover {
+                    color: $accent;
+                }
             }
-        }
 
-        svg {
-            height: 12px;
-            fill-rule: evenodd;
-            clip-rule: evenodd;
-            stroke-linejoin: round;
-            stroke-miterlimit: 2;
-
-            path {
-                fill: $accent;
+            svg {
+                height: 12px;
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 2;
+    
+                path {
+                    fill: $accent;
+                }
             }
         }
     }
