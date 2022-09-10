@@ -87,6 +87,10 @@ main {
         }
     }
 
+    #gallery h2 {
+        margin-bottom: .5em;
+    }
+
     #kontakt {
         width: 100%;
         gap: .5em;
@@ -141,7 +145,7 @@ footer {
 
     #signature {
         p {
-            margin-bottom: 0.5em;
+            margin-bottom: .5em;
 
             a {
                 transition: color 100ms ease-in-out;
