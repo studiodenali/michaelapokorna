@@ -24,6 +24,32 @@ body {
     font-family: $primary-font;
 }
 
+a#logo {
+    display: block;
+    margin: auto;
+}
+
+main {
+    margin: 0 1em;
+
+    @media only screen and (min-width: 36em) {
+        width: 90%;
+        margin: auto;
+    }
+
+    @media only screen and (min-width: 62em) {
+        width: 80%;
+    }
+
+    @media only screen and (min-width: 75em) {
+        width: 75%;
+    }
+
+    @media only screen and (min-width: 100em) {
+        width: 70em;
+    }
+}
+
 footer {
     padding: 2em 0;
 
