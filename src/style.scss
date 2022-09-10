@@ -99,13 +99,34 @@ main {
         justify-content: center;
         margin: 2em auto 4em auto;
 
-        a {
+        a.btn {
             color: $accent;
             text-decoration: none;
+
+            &.btn--social {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.55em;
+                font-size: 1rem;
+
+                svg#Layer_1 {
+                    width: 2.05em;
+                    height: 2.05em;
+    
+                    .cls-1 {
+                        fill: #f2b43b;
+                    }
+                }
+            }
 
             &:hover,
             &:focus {
                 color: $white;
+
+                svg#Layer_1 .cls-1 {
+                    fill: $white;
+                }
             }
         }
     }
