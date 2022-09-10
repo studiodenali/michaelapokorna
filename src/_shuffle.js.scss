@@ -166,13 +166,15 @@ AKA worse performance - so just set it here
 }
 
 .btn-group {
+    width: 100%;
     gap: 0.5em;
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn-group .btn {
-    border-radius: 5em;
+    border-radius: 0.5em;
 }
 
 .btn-group label.btn input[type=radio] {
@@ -214,6 +216,7 @@ AKA worse performance - so just set it here
 .btn.active:hover,
 .btn:active:hover {
     color: #fff;
+    border-color: $accent-hover;
     background-color: $accent-hover;
 }
 
