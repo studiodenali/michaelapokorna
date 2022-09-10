@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="author" content="Studio Denali - www.studiodenali.cz">
     <title>Michaela Pokorná</title>
-    <link rel="stylesheet" href="./style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
@@ -19,7 +19,32 @@
                 nulla reiciendis reprehenderit exercitationem tempore pariatur itaque sint! Delectus perspiciatis quo
                 doloribus amet temporibus impedit.</p>
         </section>
-        <section id="gallery"></section>
+        <section id="gallery">
+            <div id="gallery__grid">
+                <figure class="image">
+                    <img src="./images/12986968_1247746801920696_682242559829526449_n.jpg" alt="">
+                </figure>
+                <figure class="image">
+                    <img src="./images/13151644_1258318757530167_8818189922559248231_n.jpg" alt="">
+                </figure>
+                <figure class="image">
+                    <img src="./images/13901392_1331692506859458_4576659118272263149_n.jpg" alt="">
+                </figure>
+                <figure class="image"></figure>
+                <figure class="image"></figure>
+                <figure class="image"></figure>
+                <figure class="image"></figure>
+                <figure class="image"></figure>
+                <figure class="image"></figure>
+                <figure class="image"></figure>
+                <figure class="image"></figure>
+                <figure class="image"></figure>
+                <figure class="image"></figure>
+                <figure class="image"></figure>
+                <figure class="image"></figure>
+            </div>
+            <button id="gallery__btn">Zobrazit více</button>
+        </section>
     </main>
     <footer>
         <div id="signature">
@@ -38,7 +63,26 @@
     </footer>
     <script>
         document.getElementById("copyright__year").innerHTML = new Date().getFullYear();
+
+        const gallery = document.getElementById("gallery__grid");
+        const btn = document.getElementById("gallery__btn");
+        const images = document.getElementById("gallery__grid").children;
+        const imagesLenght = gallery.querySelectorAll(".image").length;
+
+        if (imagesLenght > 9) {
+            btn.style.display = "block";
+            let page = 1;
+
+            btn.addEventListener("click", function() {
+                page++;
+                console.log(gallery.children);
+            });
+        } else if (imagesLenght <= 9) {
+            btn.style.display = "none";
+        };
     </script>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/lightbox.min.js"></script>
 </body>
 
 </html>

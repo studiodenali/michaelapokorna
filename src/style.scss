@@ -64,9 +64,26 @@ main {
             }
         }
 
-        &#gallery {
+        &#gallery #gallery__grid {
+            gap: 2em;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
+
+            figure.image {
+                display: none;
+                aspect-ratio: 3 / 4;
+                background-color: lightgray;
+
+                img {
+                    width: 100%;
+                    aspect-ratio: 3 / 4;
+                    object-fit: cover;
+                }
+
+                &:nth-child(-n+9) {
+                    display: block;
+                }
+            }
 
             @media only screen and (min-width: 36em) {
                 grid-template-columns: repeat(3, 1fr);
