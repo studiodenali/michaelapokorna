@@ -83,6 +83,23 @@ main {
             }
         }
 
+        &#kontakt {
+            p {
+                font-size: 1.5rem;
+                text-align: center;
+
+                a {
+                    color: $accent;
+    
+                    &:hover,
+                    &:focus {
+                        color: $accent-hover;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
         @media only screen and (min-width: 36em) {
             margin: 3em 0;
         }
