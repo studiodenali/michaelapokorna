@@ -200,7 +200,7 @@ AKA worse performance - so just set it here
     .btn:hover {
         color: #fff;
         text-decoration: none;
-        background-color: #50aff8;
+        background-color: $accent-hover;
     }
 }
 
@@ -208,13 +208,13 @@ AKA worse performance - so just set it here
 .btn:active {
     outline: none;
     color: #fff;
-    background-color: #6ebffe;
+    background-color: $accent;
 }
 
 .btn.active:hover,
 .btn:active:hover {
     color: #fff;
-    background-color: #50aff8;
+    background-color: $accent-hover;
 }
 
 .btn:disabled {
@@ -225,23 +225,23 @@ AKA worse performance - so just set it here
 }
 
 .btn--primary {
-    color: #6ebffe;
-    border-color: #6ebffe;
+    color: $accent;
+    border-color: $accent;
     background-color: #fff;
 }
 
 @media (-moz-touch-enabled: 0),
 (pointer: fine) {
     .btn--primary:hover {
-        border-color: #50aff8;
-        background-color: #50aff8;
+        border-color: $accent-hover;
+        background-color: $accent-hover;
     }
 }
 
 .btn--primary.active,
 .btn--primary:active {
-    border-color: #50aff8;
-    background-color: #50aff8;
+    border-color: $accent;
+    background-color: $accent;
 }
 
 .btn--primary:disabled {
