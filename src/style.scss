@@ -16,6 +16,7 @@ $accent-hover: #f1a510;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $primary-font;
 
     &::before,
     &::after {
@@ -28,17 +29,29 @@ html {
     -webkit-text-size-adjust: none;
 }
 
-body {
-    font-family: $primary-font;
-}
-
 a#logo {
-    width: 15em;
+    width: 13em;
     display: block;
     margin: 2em auto;
 
     img {
-        height: 100%;
+        width: 13em;
+
+        @media only screen and (min-width: 36em) {
+            width: 15em;
+        }
+    }
+
+    @media only screen and (min-width: 36em) {
+        width: 15em;
+    }
+
+    @media only screen and (min-width: 62em) {
+        margin: 3em auto 2em auto;
+    }
+
+    @media only screen and (min-width: 75em) {
+        margin: 4em auto 2em auto;
     }
 }
 
@@ -52,10 +65,9 @@ main {
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
 
         h1 {
-            font-family: $primary-font;
             font-size: 3rem;
             white-space: nowrap;
         }
@@ -67,45 +79,37 @@ main {
     }
 
     h2 {
-        font-family: $primary-font;
         font-size: 2rem;
         text-align: center;
     }
 
-    section {
-        margin: 2em 0;
+    #about {
+        margin: 2em auto;
 
-        &#about {
-            p {
-                font-family: $secondary-font;
-                font-size: 1.2rem;
-                text-align: center;
-            }
+        p {
+            font-family: $secondary-font;
+            font-size: 1.2rem;
+            text-align: center;
         }
+    }
 
-        &#kontakt {
-            p {
-                font-size: 1.5rem;
-                text-align: center;
+    #kontakt {
+        margin: 2em auto 4em auto;
 
-                a {
-                    color: $accent;
-    
-                    &:hover,
-                    &:focus {
-                        color: $accent-hover;
-                        text-decoration: none;
-                    }
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 0;
+
+            a {
+                color: $accent;
+
+                &:hover,
+                &:focus {
+                    color: $accent-hover;
+                    text-decoration: none;
                 }
             }
-        }
-
-        @media only screen and (min-width: 36em) {
-            margin: 3em 0;
-        }
-
-        @media only screen and (min-width: 75em) {
-            margin: 4em 0;
         }
     }
 
