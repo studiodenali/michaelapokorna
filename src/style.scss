@@ -6,7 +6,8 @@ $secondary-font: "DM Sans", sans-serif;
 
 $black: #000;
 $white: #fff;
-$accent: #000;
+$accent: #f2b43b;
+$accent-hover: #f1a510;
 
 @import "./_shuffle.js";
 @import "./_lightbox";
@@ -32,11 +33,9 @@ body {
 }
 
 a#logo {
-    width: 4em;
-    height: 4em;
+    width: 8em;
     display: block;
     margin: 2em auto;
-    background-color: lightgray;
 
     img {
         height: 100%;
@@ -64,33 +63,6 @@ main {
 
             @media only screen and (min-width: 75em) {
                 height: 30em;
-            }
-        }
-
-        &#gallery #gallery__grid {
-            gap: 2em;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-
-            figure.image {
-                width: 100%;
-                display: none;
-                aspect-ratio: 3 / 4;
-                background-color: lightgray;
-
-                img {
-                    width: 100%;
-                    aspect-ratio: 3 / 4;
-                    object-fit: cover;
-                }
-
-                &:nth-child(-n+9) {
-                    display: block;
-                }
-            }
-
-            @media only screen and (min-width: 36em) {
-                grid-template-columns: repeat(3, 1fr);
             }
         }
 
