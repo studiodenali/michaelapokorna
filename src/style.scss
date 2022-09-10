@@ -45,24 +45,37 @@ a#logo {
 main {
     margin: 0 1em;
 
+    #name {
+        width: 100%;
+        gap: 1em;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+
+        h1 {
+            font-family: $primary-font;
+            font-size: 3rem;
+            white-space: nowrap;
+        }
+
+        svg {
+            width: 6em;
+            flex-basis: 6em;
+        }
+    }
+
+    h2 {
+        font-family: $primary-font;
+        font-size: 2rem;
+        text-align: center;
+    }
+
     section {
         margin: 2em 0;
 
         &#about {
-            h1,
-            h2 {
-                font-family: $primary-font;
-                text-align: center;
-            }
-
-            h1 {
-                font-size: 3rem;
-            }
-
-            h2 {
-                font-size: 2rem;
-            }
-
             p {
                 font-family: $secondary-font;
                 font-size: 1.2rem;
