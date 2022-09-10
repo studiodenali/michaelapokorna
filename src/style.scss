@@ -68,19 +68,32 @@ main {
         margin-bottom: 1em;
 
         h1 {
-            font-size: 3rem;
+            font-size: 2rem;
             white-space: nowrap;
+
+            @media only screen and (min-width: 36em) {
+                font-size: 3rem;
+            }
         }
 
         svg {
-            width: 6em;
-            flex-basis: 6em;
+            width: auto;
+            flex-basis: auto;
+
+            @media only screen and (min-width: 36em) {
+                width: 6em;
+                flex-basis: 6em;
+            }
         }
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: center;
+
+        @media only screen and (min-width: 36em) {
+            font-size: 2rem;
+        }
     }
 
     #about {
@@ -152,7 +165,7 @@ footer {
 
             a {
                 transition: color 100ms ease-in-out;
-    
+
                 &:hover {
                     color: $accent;
                 }
@@ -164,7 +177,7 @@ footer {
                 clip-rule: evenodd;
                 stroke-linejoin: round;
                 stroke-miterlimit: 2;
-    
+
                 path {
                     fill: $accent;
                 }
