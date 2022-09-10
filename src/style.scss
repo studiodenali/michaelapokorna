@@ -29,12 +29,29 @@ body {
 }
 
 a#logo {
+    height: 4em;
     display: block;
     margin: auto;
+
+    img {
+        height: 100%;
+    }
 }
 
 main {
     margin: 0 1em;
+
+    section {
+        margin: 2em 0;
+
+        @media only screen and (min-width: 36em) {
+            margin: 3em 0;
+        }
+
+        @media only screen and (min-width: 75em) {
+            margin: 4em 0;
+        }
+    }
 
     @media only screen and (min-width: 36em) {
         width: 90%;
