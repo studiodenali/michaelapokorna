@@ -246,12 +246,6 @@ AKA worse performance - so just set it here
     background-color: rgba(52, 152, 219, 0);
 }
 
-@media only screen and (max-width: 48em) {
-    .btn {
-        font-size: 0.875rem;
-    }
-}
-
 .textfield {
     -webkit-appearance: none;
     box-sizing: border-box;
